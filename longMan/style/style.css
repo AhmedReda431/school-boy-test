@@ -1,0 +1,92 @@
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: black;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.screen .content {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.screen button {
+  padding: 10px 50px;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: none;
+}
+
+.wrapper .example {
+  margin: 30px auto;
+  padding: 50px 50px 20px 50px;
+  width: 80%;
+  border: 10px double #21bbcf;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+@media (max-width: 553px) {
+  .wrapper .example {
+    padding: 30px 7px 30px 8px;
+    width: 100%;
+    font-size: 15px;
+    margin: 15px auto;
+  }
+}
+
+.wrapper .example img {
+  height: 130px;
+  margin-bottom: 12px;
+}
+
+.wrapper .example .intro #name {
+  text-transform: capitalize;
+}
+
+.wrapper .example .choices form input {
+  cursor: pointer;
+}
+
+.wrapper .example .choices form input[type="reset"] {
+  float: left;
+  margin-right: 10px;
+}
+
+.wrapper .example .choices #options001 input {
+  margin-right: 5px;
+}
+
+.wrapper .example .choices .arrow {
+  float: right;
+}
+
+.wrapper .example #incorrectAnswerMessages .messages-wrapper {
+  padding-left: 15px;
+}
+
+.wrapper .correct {
+  background-color: rgba(47, 170, 241, 0.822) !important;
+  z-index: 99;
+}
+/*# sourceMappingURL=style.css.map */
